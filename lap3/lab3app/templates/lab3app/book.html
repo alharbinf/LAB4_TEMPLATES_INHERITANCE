@@ -1,0 +1,17 @@
+{% extends 'lab3app/base.html' %}
+
+{% block title %} 
+
+My favorit book 
+    {% endblock %}
+
+
+    {% block content %}
+    <ol>
+    {%for i in books%}
+
+    <h1 class ="text-primary">{{i}}</h1>
+    {% endfor %}
+    </ol>
+
+    {% endblock %}   
